@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   // CHANGE THIS TO YOUR LOCAL FILE NAME (e.g., "./me.jpg")
-  const profilePicUrl = "./component/IMG_7143.JPG"; 
+  const profilePicUrl = "./IMG_7143.JPG"; 
 
   return (
     <section id="about" className="pt-40 pb-24 px-4 overflow-hidden relative">
