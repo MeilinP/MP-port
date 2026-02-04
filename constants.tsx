@@ -77,7 +77,8 @@ export const PROJECTS: Project[] = [
   description: [
     "Exploratory research project analyzing structural similarities between jazz audio features and S&P 500 market dynamics.",
     "Engineered cross-domain time-series features (energy, momentum, volatility) and aligned musical tempo with market time scales.",
-    "Applied autocorrelation-based cycle detection and correlation analysis to study periodicity and regime behavior."
+    "Applied autocorrelation-based cycle detection and correlation analysis to study periodicity and regime behavior.",
+    "Check it out at: https://market-tempo.vercel.app"
   ],
   imagePlaceholder: "Music vs Market Time-Series"
 }
