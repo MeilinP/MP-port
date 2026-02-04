@@ -57,38 +57,17 @@ export const PROJECTS: Project[] = [
     imagePlaceholder: "3D Volatility Plot"
   },
   {
-    title: "HFT Order Book Simulator",
-    year: "2024",
-    tags: ["C++", "Market Microstructure"],
-    imageUrl: "", 
-    description: [
-      "Developed a high-performance LOB simulator to analyze price impact and liquidity provision.",
-      "Implemented basic market-making algorithms and tested back-off strategies during volatility."
-    ],
-    imagePlaceholder: "Order Book Visualization"
-  },
-  {
-    title: "Portfolio Risk Management Tool",
-    year: "2023",
-    tags: ["Python", "VaR", "Optimization"],
-    imageUrl: "", 
-    description: [
-      "Built a tool to calculate Value-at-Risk (VaR) and CVaR for multi-asset portfolios.",
-      "Implemented Mean-Variance optimization with custom constraints for sector exposure."
-    ],
-    imagePlaceholder: "Risk Analysis Report"
-  },
-  {
-    title: "Crypto Arbitrage Bot",
-    year: "2023",
-    tags: ["Node.js", "WebSockets", "Arbitrage"],
-    imageUrl: "", 
-    description: [
-      "Identified triangular arbitrage opportunities across DEXs using real-time price feeds.",
-      "Optimized execution speed using custom WebSocket handlers to minimize slippage."
-    ],
-    imagePlaceholder: "Execution Logs"
-  }
+  title: "Algorithmic Trading Bot (Lumibot)",
+  year: "2025",
+  tags: ["Python", "Lumibot", "Quant Trading", "Backtesting"],
+  imageUrl: "",
+  description: [
+    "Developed an end-to-end algorithmic trading bot using Lumibot, integrating Polygon market data and Alpaca brokerage APIs.",
+    "Implemented rule-based trading strategies using technical indicators (EMA, RSI, Bollinger Bands) with configurable risk management, stop-loss, and take-profit logic.",
+    "Conducted historical backtesting and paper trading to evaluate performance metrics including PnL, Sharpe ratio, and maximum drawdown."
+  ],
+  imagePlaceholder: "Trading Strategy Backtest"
+}
 ];
 
 export const EXPERIENCES: Experience[] = [
@@ -109,8 +88,8 @@ export const EXPERIENCES: Experience[] = [
   location: "Santa Barbara, CA",
   period: "Sept 2021 – June 2022",
   points: [
-    "Produced high-quality, structured lecture notes for CS9 (Intermediate Python) to support students registered with the Disabled Students Program."    "Produced structured lecture notes for CS9 (Intermediate Python), supporting accessibility for students registered with the Disabled Students Program."
-  ],
+  "Produced high-quality, structured lecture notes for CS9 (Intermediate Python) to support students registered with the Disabled Students Program."
+],
   link: "https://ucsb-cs9.github.io/w24/"
 }
 ];
