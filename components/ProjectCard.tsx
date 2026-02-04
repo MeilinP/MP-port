@@ -8,37 +8,40 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-      <div className="aspect-video bg-slate-100 relative overflow-hidden flex items-center justify-center p-8 border-b border-slate-100">
-        {/* Screenshot Placeholder */}
-        <div className="text-center text-slate-400">
-          <svg className="w-12 h-12 mx-auto mb-3 opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-          <p className="text-xs font-medium uppercase tracking-wider">{project.imagePlaceholder}</p>
+    <div className="group bg-slate-900/50 rounded-3xl border border-slate-800 overflow-hidden hover:border-blue-500/30 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col h-full">
+      <div className="aspect-[16/10] bg-slate-900 relative overflow-hidden flex items-center justify-center p-12 border-b border-slate-800 group-hover:bg-slate-800 transition-colors">
+        <div className="text-center">
+          <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-blue-500/20">
+            <svg className="w-8 h-8 text-blue-500 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 max-w-[150px] mx-auto leading-relaxed">
+            {project.imagePlaceholder}
+          </p>
         </div>
+        <div className="absolute top-4 right-4 text-[10px] font-black text-slate-700 uppercase tracking-widest">{project.year}</div>
       </div>
       
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
-            {project.title}
-          </h3>
-          <span className="text-xs font-bold text-slate-400">{project.year}</span>
-        </div>
+      <div className="p-8 flex flex-col flex-1">
+        <h3 className="text-xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
+          {project.title}
+        </h3>
         
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-6">
           {project.tags.map(tag => (
-            <span key={tag} className="px-2 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase rounded tracking-wide">
+            <span key={tag} className="px-2.5 py-1 bg-blue-500/10 text-blue-400 text-[9px] font-black uppercase rounded-md tracking-[0.1em] border border-blue-500/10">
               {tag}
             </span>
           ))}
         </div>
         
-        <ul className="space-y-2 mb-6">
+        <ul className="space-y-4 mb-8 flex-1">
           {project.description.map((point, i) => (
-            <li key={i} className="text-sm text-slate-600 flex items-start">
-              <span className="text-blue-500 mr-2 mt-1">•</span>
+            <li key={i} className="text-sm text-slate-400 flex items-start leading-relaxed">
+              <span className="text-blue-500/40 mr-3 mt-1.5 flex-shrink-0">
+                <svg className="w-1.5 h-1.5" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
+              </span>
               {point}
             </li>
           ))}
@@ -48,11 +51,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <a 
             href={project.link} 
             target="_blank" 
-            className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700"
+            className="inline-flex items-center text-xs font-black uppercase tracking-widest text-blue-400 hover:text-white transition-all group/link"
           >
-            View Live Project
-            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            Launch Live Project
+            <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
         )}
