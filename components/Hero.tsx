@@ -2,8 +2,8 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
-  // Using the ESM-native way to resolve local assets relative to the component's file location
-  const profilePicUrl = new URL('../IMG_7143.JPG', import.meta.url).href;
+  // Use absolute path relative to the domain root
+  const profilePicUrl = "/IMG_7143.JPG"; 
 
   return (
     <section id="about" className="pt-40 pb-24 px-4 overflow-hidden relative">

@@ -1,9 +1,5 @@
 
-import React from 'react';
 import { Project, Experience, Education } from './types';
-
-// Robustly resolve project images using current file location context
-const getImageUrl = (path: string) => new URL(`./${path}`, import.meta.url).href;
 
 export const EDUCATION: Education[] = [
   {
@@ -28,7 +24,7 @@ export const PROJECTS: Project[] = [
     title: "Extracting Alpha from Financial News",
     year: "2025",
     tags: ["Python", "FinBERT", "NLP", "Quant Finance"],
-    imageUrl: getImageUrl("components/sentiment.png"), 
+    imageUrl: "/components/sentiment.png", 
     description: [
       "Built sentiment signal from 330K+ financial headlines using FinBERT; achieved 0.71% daily IC.",
       "Validated alpha through Fama-French 3-factor regression — 15% annualized alpha.",
@@ -41,7 +37,7 @@ export const PROJECTS: Project[] = [
     year: "2024",
     link: "https://options-pricing-calculator.vercel.app",
     tags: ["React", "TypeScript", "Black-Scholes"],
-    imageUrl: getImageUrl("components/options.png"),
+    imageUrl: "/components/options.png",
     description: [
       "Engineered an Options Pricing Calculator integrating Black-Scholes and Monte Carlo models.",
       "Developed a comprehensive Greeks Engine for real-time risk sensitivity analysis."
@@ -53,7 +49,7 @@ export const PROJECTS: Project[] = [
     year: "2024",
     link: "https://volatility-surface-mp.streamlit.app/",
     tags: ["Python", "Streamlit", "Plotly"],
-    imageUrl: getImageUrl("components/demo.gif"),
+    imageUrl: "/components/demo.gif",
     description: [
       "Interactive dashboard visualizing the implied volatility surface for SPY options.",
       "Analyzes term structure and volatility skew across multiple expirations."
