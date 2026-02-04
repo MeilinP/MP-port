@@ -1,5 +1,5 @@
 
-import { Project, Experience, Education } from './types';
+import { Project, Experiences, Education } from './types';
 
 export const EDUCATION: Education[] = [
   {
