@@ -129,7 +129,7 @@ const App: React.FC = () => {
       <footer id="contact" className="py-24 bg-slate-950 border-t border-slate-900">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-8">Let's Connect</h2>
-          <p className="text-slate-400 mb-10 max-w-lg mx-auto leading-relaxed">I am actively seeking roles in Quantitative Research and Data Science where I can apply my expertise in stochastic modeling and ML.</p>
+          <p className="text-slate-400 mb-10 max-w-lg mx-auto leading-relaxed">I am actively seeking Quant Trader/Analyst/Desk Quant where I can apply my expertise in stochastic modeling and ML.</p>
           <div className="flex justify-center space-x-10 mb-16">
              <a href="mailto:meilinpan2000@gmail.com" className="text-slate-500 hover:text-blue-400 transition-all transform hover:scale-110">
                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
