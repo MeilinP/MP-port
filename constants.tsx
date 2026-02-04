@@ -6,15 +6,14 @@ export const EDUCATION: Education[] = [
     institution: "University of Southern California (USC)",
     location: "Los Angeles, CA",
     degree: "Master of Science in Applied Data Science",
-    period: "Graduated in Jan 2026",
+    period: "Jan 2024 - Jan 2026",
     coursework: ["Applied Machine Learning", "Data Mining", "Database System Architecture"]
   },
   {
     institution: "University of California, Santa Barbara (UCSB)",
     location: "Goleta, CA",
     degree: "Bachelor of Science in Statistics and Data Science",
-    period: "March 2023",
-    gpa: "3.6/4.0 (Dean’s List)",
+    period: "Sep 2019 - Mar 2023",
     coursework: ["Probability Theory", "Mathematical Statistics", "Advanced Calculus", "Derivative Market"]
   }
 ];
@@ -23,6 +22,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Extracting Alpha from Financial News",
     year: "2025",
+    link: "https://github.com/MeilinP/FinBERT_Sentiment_Analysis_on_SP500Constitutes",
     tags: ["Python", "FinBERT", "NLP", "Quant Finance"],
     imageUrl: "/sentiment.png", 
     description: [
@@ -109,9 +109,7 @@ export const EXPERIENCES: Experience[] = [
   location: "Santa Barbara, CA",
   period: "Sept 2021 – June 2022",
   points: [
-    "Produced high-quality, structured lecture notes for CS9 (Intermediate Python) to support students registered with the Disabled Students Program.",
-    "Translated complex programming and algorithmic concepts into clear, accessible written explanations on a weekly basis.",
-    "Maintained consistency, accuracy, and timely delivery of notes aligned with official course materials and lectures."
+    "Produced high-quality, structured lecture notes for CS9 (Intermediate Python) to support students registered with the Disabled Students Program."    "Produced structured lecture notes for CS9 (Intermediate Python), supporting accessibility for students registered with the Disabled Students Program."
   ],
   link: "https://ucsb-cs9.github.io/w24/"
 }
