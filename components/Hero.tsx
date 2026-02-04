@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
         
         <div className="flex-1 text-center md:text-left">
           <div className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] mb-8">
-            Now based in Los Angeles, CA
+            Currently in Los Angeles, CA and willing to relocate
           </div>
           <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
             Meilin Pan
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             Architecting <span className="text-blue-400">Alpha</span> through Machine Learning and <span className="text-indigo-400">Computational Finance</span>.
           </h2>
           <p className="text-lg text-slate-500 mb-12 max-w-xl leading-relaxed">
-            Master's candidate at USC specializing in Applied Data Science. I build robust models for market prediction, option Greeks calculation, and real-time sentiment analysis.
+            Master of Science at Viterbi School of Engineering at USC specializing in Applied Data Science. I enjoy testing out different strategies specifically for option trading. 
           </p>
           
           <div className="flex flex-wrap gap-5 justify-center md:justify-start">
