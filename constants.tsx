@@ -67,6 +67,19 @@ export const PROJECTS: Project[] = [
     "Conducted historical backtesting and paper trading to evaluate performance metrics including PnL, Sharpe ratio, and maximum drawdown."
   ],
   imagePlaceholder: "Trading Strategy Backtest"
+},
+  {
+  title: "Market Tempo: Music & Market Time-Series Analysis",
+  year: "2025",
+  link: "https://github.com/MeilinP/market-tempo/tree/main", 
+  tags: ["Python", "Time Series", "Signal Processing", "Quant Research"],
+  imageUrl: "/market-tempo.png", 
+  description: [
+    "Exploratory research project analyzing structural similarities between jazz audio features and S&P 500 market dynamics.",
+    "Engineered cross-domain time-series features (energy, momentum, volatility) and aligned musical tempo with market time scales.",
+    "Applied autocorrelation-based cycle detection and correlation analysis to study periodicity and regime behavior."
+  ],
+  imagePlaceholder: "Music vs Market Time-Series"
 }
 ];
 
