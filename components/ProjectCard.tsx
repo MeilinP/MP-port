@@ -9,18 +9,26 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="group bg-slate-900/50 rounded-3xl border border-slate-800 overflow-hidden hover:border-blue-500/30 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col h-full">
-      <div className="aspect-[16/10] bg-slate-900 relative overflow-hidden flex items-center justify-center p-12 border-b border-slate-800 group-hover:bg-slate-800 transition-colors">
-        <div className="text-center">
-          <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-blue-500/20">
-            <svg className="w-8 h-8 text-blue-500 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
+      <div className="aspect-[16/10] bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-slate-800 group-hover:bg-slate-800 transition-colors">
+        {project.imageUrl ? (
+          <img 
+            src={project.imageUrl} 
+            alt={project.title} 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          />
+        ) : (
+          <div className="text-center p-12">
+            <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-blue-500/20">
+              <svg className="w-8 h-8 text-blue-500 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 max-w-[150px] mx-auto leading-relaxed">
+              {project.imagePlaceholder}
+            </p>
           </div>
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 max-w-[150px] mx-auto leading-relaxed">
-            {project.imagePlaceholder}
-          </p>
-        </div>
-        <div className="absolute top-4 right-4 text-[10px] font-black text-slate-700 uppercase tracking-widest">{project.year}</div>
+        )}
+        <div className="absolute top-4 right-4 text-[10px] font-black text-slate-700 uppercase tracking-widest bg-slate-950/50 px-2 py-1 rounded backdrop-blur-sm">{project.year}</div>
       </div>
       
       <div className="p-8 flex flex-col flex-1">

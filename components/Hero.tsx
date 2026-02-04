@@ -2,6 +2,9 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
+  // CHANGE THIS TO YOUR LOCAL FILE NAME (e.g., "./me.jpg")
+  const profilePicUrl = "./meilin-pan.jpg"; 
+
   return (
     <section id="about" className="pt-40 pb-24 px-4 overflow-hidden relative">
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[500px] h-[500px] bg-blue-500/5 blur-[120px] rounded-full"></div>
@@ -11,15 +14,15 @@ const Hero: React.FC = () => {
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="w-56 h-56 md:w-72 md:h-72 flex-shrink-0 bg-slate-900 rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative">
-            <div className="absolute inset-0 flex items-center justify-center text-slate-600 text-center p-8 bg-slate-900">
-              <span className="font-bold text-xs uppercase tracking-widest leading-loose">
-                Quantitative<br/>Analyst Profile
-              </span>
-            </div>
             <img 
-              src="https://picsum.photos/600/600?grayscale" 
+              src={profilePicUrl} 
               alt="Meilin Pan" 
-              className="w-full h-full object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-500"
+              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+              onError={(e) => {
+                // If local image isn't found, show placeholder
+                (e.target as HTMLImageElement).src = "https://picsum.photos/600/600?grayscale";
+                (e.target as HTMLImageElement).classList.add('opacity-20');
+              }}
             />
           </div>
         </div>

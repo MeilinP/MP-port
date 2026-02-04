@@ -5,7 +5,8 @@ export interface Project {
   description: string[];
   tags: string[];
   link?: string;
-  imagePlaceholder: string;
+  imageUrl?: string; // New field for real images
+  imagePlaceholder: string; // Fallback text
 }
 
 export interface Experience {

@@ -24,38 +24,71 @@ export const PROJECTS: Project[] = [
   {
     title: "Extracting Alpha from Financial News",
     year: "2025",
-    tags: ["Python", "FinBERT", "NLP", "Quant Finance", "NLP"],
+    tags: ["Python", "FinBERT", "NLP", "Quant Finance"],
+    imageUrl: "./news-alpha.png", // REPLACE WITH YOUR LOCAL FILE NAME
     description: [
-      "Built sentiment signal from 330K+ financial headlines (S&P 500, 2009–2020) using FinBERT; achieved 0.71% daily IC with 52% hit rate",
-      "Validated alpha through Fama-French 3-factor regression — 15% annualized alpha (t=2.73) after controlling for market, size, and value",
-      "Optimized strategy across rebalancing frequencies and news filters; weekly rebalancing with 5+ article threshold yielded Sharpe 1.26",
-      "Engineered GPU-accelerated NLP pipeline with checkpoint-based processing on Colab T4"
+      "Built sentiment signal from 330K+ financial headlines using FinBERT; achieved 0.71% daily IC.",
+      "Validated alpha through Fama-French 3-factor regression — 15% annualized alpha.",
+      "Optimized strategy; weekly rebalancing with 5+ article threshold yielded Sharpe 1.26."
     ],
-    imagePlaceholder: "Screenshot of sentiment analysis dashboard and alpha curve"
+    imagePlaceholder: "Sentiment Analysis Dashboard"
   },
   {
-    title: "Options Pricing Calculator & Greeks Engine",
+    title: "Options Pricing & Greeks Engine",
     year: "2024",
     link: "https://options-pricing-calculator.vercel.app",
-    tags: ["React", "TypeScript", "Black-Scholes", "Monte Carlo", "Binomial Trees"],
+    tags: ["React", "TypeScript", "Black-Scholes"],
+    imageUrl: "./options-calc.jpg", // REPLACE WITH YOUR LOCAL FILE NAME
     description: [
-      "Engineered an Options Pricing Calculator integrating Black-Scholes, Monte Carlo simulation, and Binomial Tree Models",
-      "Developed a comprehensive Greeks Calculation Engine (Delta, Gamma, Vega, Theta, Rho) to analyze sensitivities",
-      "Designed and deployed a real-time pricing interface with dynamically adjustable parameters for risk management training"
+      "Engineered an Options Pricing Calculator integrating Black-Scholes and Monte Carlo models.",
+      "Developed a comprehensive Greeks Engine for real-time risk sensitivity analysis."
     ],
-    imagePlaceholder: "Screenshot of Options Pricing Calculator UI"
+    imagePlaceholder: "Options Pricing UI"
   },
   {
     title: "SPY Volatility Surface Visualizer",
     year: "2024",
-    link: "https://volatility-surface-mp.streamlit.app/#spy-volatility-surface-options-starter",
-    tags: ["Python", "Streamlit", "Financial Modeling", "Data Visualization", "Volatility"],
+    link: "https://volatility-surface-mp.streamlit.app/",
+    tags: ["Python", "Streamlit", "Plotly"],
+    imageUrl: "./vol-surface.png", // REPLACE WITH YOUR LOCAL FILE NAME
     description: [
-      "Interactive dashboard visualizing the implied volatility surface for SPY options",
-      "Implemented smooth surface interpolation and Greeks surface visualization using Plotly/Streamlit",
-      "Analyzes term structure and volatility skew across multiple expirations"
+      "Interactive dashboard visualizing the implied volatility surface for SPY options.",
+      "Analyzes term structure and volatility skew across multiple expirations."
     ],
-    imagePlaceholder: "Screenshot of Volatility Surface 3D Plot"
+    imagePlaceholder: "3D Volatility Plot"
+  },
+  {
+    title: "HFT Order Book Simulator",
+    year: "2024",
+    tags: ["C++", "Market Microstructure"],
+    imageUrl: "./order-book.png", // REPLACE WITH YOUR LOCAL FILE NAME
+    description: [
+      "Developed a high-performance LOB simulator to analyze price impact and liquidity provision.",
+      "Implemented basic market-making algorithms and tested back-off strategies during volatility."
+    ],
+    imagePlaceholder: "Order Book Visualization"
+  },
+  {
+    title: "Portfolio Risk Management Tool",
+    year: "2023",
+    tags: ["Python", "VaR", "Optimization"],
+    imageUrl: "./risk-tool.png", // REPLACE WITH YOUR LOCAL FILE NAME
+    description: [
+      "Built a tool to calculate Value-at-Risk (VaR) and CVaR for multi-asset portfolios.",
+      "Implemented Mean-Variance optimization with custom constraints for sector exposure."
+    ],
+    imagePlaceholder: "Risk Analysis Report"
+  },
+  {
+    title: "Crypto Arbitrage Bot",
+    year: "2023",
+    tags: ["Node.js", "WebSockets", "Arbitrage"],
+    imageUrl: "./crypto-bot.jpg", // REPLACE WITH YOUR LOCAL FILE NAME
+    description: [
+      "Identified triangular arbitrage opportunities across DEXs using real-time price feeds.",
+      "Optimized execution speed using custom WebSocket handlers to minimize slippage."
+    ],
+    imagePlaceholder: "Execution Logs"
   }
 ];
 
@@ -66,15 +99,15 @@ export const EXPERIENCES: Experience[] = [
     location: "Palo Alto, CA",
     period: "July 2023 – Dec 2023",
     points: [
-      "Engineered end-to-end Web3 analytics pipeline leveraging Dune Analytics SQL to process 2-10TB of DNS transaction data",
-      "Analyzed market microstructure patterns of domain trading using statistical techniques to isolate key drivers of demand",
-      "Created real-time Dune Analytics dashboards for executive leadership, reducing reporting time by 1 hour daily"
+      "Engineered end-to-end Web3 analytics pipeline leveraging Dune Analytics SQL.",
+      "Analyzed market microstructure patterns of domain trading using statistical techniques.",
+      "Created real-time Dune Analytics dashboards for executive leadership."
     ]
   }
 ];
 
 export const SKILLS = {
-  programming: ["Python", "Scikit-learn", "PySpark", "TensorFlow", "PyTorch", "BackTrader", "C++", "R", "SQL"],
+  programming: ["Python", "Scikit-learn", "PySpark", "TensorFlow", "PyTorch", "C++", "R", "SQL"],
   modeling: ["RNN/LSTM", "ARIMA/GARCH", "Stochastic Calculus", "Monte-Carlo", "BSM", "VaR/CVaR"],
   cloud: ["AWS", "Google Cloud Platform (GCP)", "Docker", "REST APIs", "Git"]
 };
