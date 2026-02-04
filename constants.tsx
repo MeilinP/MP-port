@@ -91,7 +91,7 @@ export const PROJECTS: Project[] = [
   }
 ];
 
-export const EXPERIENCE: Experience[] = [
+export const EXPERIENCES: Experience[] = [
   {
     company: "Namefi.io",
     role: "Market Data Analyst Intern",
