@@ -50,6 +50,9 @@ const Hero: React.FC = () => {
             <a href="https://linkedin.com/in/meilinp123" target="_blank" className="px-10 py-4 bg-slate-900 text-slate-100 border border-slate-800 rounded-2xl font-bold hover:bg-slate-800 transition-all hover:scale-105 active:scale-95">
               LinkedIn
             </a>
+            <a href="https://github.com/MeilinP" target="_blank" className="px-10 py-4 bg-slate-900 text-slate-100 border border-slate-800 rounded-2xl font-bold hover:bg-slate-800 transition-all hover:scale-105 active:scale-95">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
