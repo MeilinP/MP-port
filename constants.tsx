@@ -1,5 +1,5 @@
 
-import { Project, Relevant_Experience, Education } from './types';
+import { Project, Experience, Education } from './types';
 
 export const EDUCATION: Education[] = [
   {
@@ -91,7 +91,7 @@ export const PROJECTS: Project[] = [
   }
 ];
 
-export const RELEVANT_EXPERIENCES: Experience[] = [
+export const EXPERIENCE: Experience[] = [
   {
     company: "Namefi.io",
     role: "Market Data Analyst Intern",
