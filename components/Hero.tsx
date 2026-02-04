@@ -2,8 +2,8 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
-  // CHANGE THIS TO YOUR LOCAL FILE NAME (e.g., "./me.jpg")
-  const profilePicUrl = "IMG_7143.JPG"; 
+  // Using the ESM-native way to resolve local assets relative to the component's file location
+  const profilePicUrl = new URL('../IMG_7143.JPG', import.meta.url).href;
 
   return (
     <section id="about" className="pt-40 pb-24 px-4 overflow-hidden relative">
@@ -17,11 +17,13 @@ const Hero: React.FC = () => {
             <img 
               src={profilePicUrl} 
               alt="Meilin Pan" 
-              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+              className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
               onError={(e) => {
-                // If local image isn't found, show placeholder
-                (e.target as HTMLImageElement).src = "https://picsum.photos/600/600?grayscale";
-                (e.target as HTMLImageElement).classList.add('opacity-20');
+                const target = e.target as HTMLImageElement;
+                console.error("Image failed to load at path:", profilePicUrl);
+                // Fallback to a placeholder if the local file isn't found
+                target.src = "https://picsum.photos/600/600?grayscale";
+                target.classList.add('opacity-20');
               }}
             />
           </div>
