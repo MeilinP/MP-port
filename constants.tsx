@@ -69,6 +69,19 @@ export const PROJECTS: Project[] = [
   imagePlaceholder: "Trading Strategy Backtest"
 },
   {
+  title: "Market Regime Identifer & Backtesting",
+  year: "2025",
+  link: "https://github.com/MeilinP/market-regime-identifier/tree/main", 
+  tags: ["Python", "Market Regimes", "Technical Analysis", "Backtesting"],
+  imageUrl: "/spy_market_regimes.png", 
+  description: [
+    "Explores regime-aware trading signals with lightweight backtests and visualizations highlighting trend vs range market conditions.",
+    "Implements ADX- and EMA-based regime classification to switch between mean-reversion (RSI) and breakout-style entry logic.",
+    "Used as a regime filter for option trading strategies, dynamically sizing down exposure outside bullish market regimes."
+  ],
+  imagePlaceholder: "Market Regime & Entry Visualizations"
+},
+  {
   title: "Market Tempo: Music & Market Time-Series Analysis",
   year: "2025",
   link: "https://github.com/MeilinP/market-tempo/tree/main", 
