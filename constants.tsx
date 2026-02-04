@@ -109,7 +109,7 @@ export const EXPERIENCES: Experience[] = [
   location: "Santa Barbara, CA",
   period: "Sept 2021 – June 2022",
   points: [
-    "Produced high-quality, structured lecture notes for CS9 (Introduction to Computer Science) to support students registered with the Disabled Students Program.",
+    "Produced high-quality, structured lecture notes for CS9 (Intermediate Python) to support students registered with the Disabled Students Program.",
     "Translated complex programming and algorithmic concepts into clear, accessible written explanations on a weekly basis.",
     "Maintained consistency, accuracy, and timely delivery of notes aligned with official course materials and lectures."
   ],
