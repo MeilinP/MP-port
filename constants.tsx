@@ -102,7 +102,19 @@ export const EXPERIENCES: Experience[] = [
       "Analyzed market microstructure patterns of domain trading using statistical techniques.",
       "Created real-time Dune Analytics dashboards for executive leadership."
     ]
-  }
+  },
+  {
+  company: "University of California, Santa Barbara (DSP)",
+  role: "Academic Notetaker",
+  location: "Santa Barbara, CA",
+  period: "Sept 2021 – June 2022",
+  points: [
+    "Produced high-quality, structured lecture notes for CS9 (Introduction to Computer Science) to support students registered with the Disabled Students Program.",
+    "Translated complex programming and algorithmic concepts into clear, accessible written explanations on a weekly basis.",
+    "Maintained consistency, accuracy, and timely delivery of notes aligned with official course materials and lectures."
+  ],
+  link: "https://ucsb-cs9.github.io/w24/"
+}
 ];
 
 export const SKILLS = {
