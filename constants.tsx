@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
     title: "Extracting Alpha from Financial News",
     year: "2025",
     tags: ["Python", "FinBERT", "NLP", "Quant Finance"],
-    imageUrl: "/components/sentiment.png", 
+    imageUrl: "/sentiment.png", 
     description: [
       "Built sentiment signal from 330K+ financial headlines using FinBERT; achieved 0.71% daily IC.",
       "Validated alpha through Fama-French 3-factor regression — 15% annualized alpha.",
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
     year: "2024",
     link: "https://options-pricing-calculator.vercel.app",
     tags: ["React", "TypeScript", "Black-Scholes"],
-    imageUrl: "/components/options.png",
+    imageUrl: "/options.png",
     description: [
       "Engineered an Options Pricing Calculator integrating Black-Scholes and Monte Carlo models.",
       "Developed a comprehensive Greeks Engine for real-time risk sensitivity analysis."
@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     year: "2024",
     link: "https://volatility-surface-mp.streamlit.app/",
     tags: ["Python", "Streamlit", "Plotly"],
-    imageUrl: "/components/demo.gif",
+    imageUrl: "/demo.gif",
     description: [
       "Interactive dashboard visualizing the implied volatility surface for SPY options.",
       "Analyzes term structure and volatility skew across multiple expirations."
