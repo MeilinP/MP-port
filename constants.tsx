@@ -6,7 +6,7 @@ export const EDUCATION: Education[] = [
     institution: "University of Southern California (USC)",
     location: "Los Angeles, CA",
     degree: "Master of Science in Applied Data Science",
-    period: "Expected Graduation Jan 2026",
+    period: "Graduated in Jan 2026",
     coursework: ["Applied Machine Learning", "Data Mining", "Database System Architecture"]
   },
   {
@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Options Pricing & Greeks Engine",
-    year: "2024",
+    year: "2025",
     link: "https://options-pricing-calculator.vercel.app",
     tags: ["React", "TypeScript", "Black-Scholes"],
     imageUrl: "/options.png",
@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "SPY Volatility Surface Visualizer",
-    year: "2024",
+    year: "2025",
     link: "https://volatility-surface-mp.streamlit.app/",
     tags: ["Python", "Streamlit", "Plotly"],
     imageUrl: "/demo.gif",
