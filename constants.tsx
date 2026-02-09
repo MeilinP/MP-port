@@ -20,6 +20,19 @@ export const EDUCATION: Education[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "High-Sharpe Deep Learning Options Trading Strategy",
+    year: "2026",
+    link: "https://github.com/MeilinP/Deeplearning-option",
+    tags: ["Python", "Deep Learning", "Options Trading", "Backtesting"],
+    imageUrl: "/dl_options.png",
+    description: [
+      "Developed an end-to-end deep learning options trading system; CNN outperformed Linear, MLP, and LSTM models with Sharpe 20.21, 38.99% total return, and −0.18% max drawdown.",
+      "Achieved 27.68% annualized return with 1.37% annualized volatility across 287 trades, demonstrating exceptional risk-adjusted performance.",
+      "Incorporated turnover penalties and transaction cost awareness, maintaining Sharpe ~17.6–17.8 at ~0.95 turnover, validating robustness under realistic execution constraints."
+    ],
+    imagePlaceholder: "Deep Learning Options Backtest"
+},
+  {
     title: "Extracting Alpha from Financial News",
     year: "2025",
     link: "https://github.com/MeilinP/FinBERT_Sentiment_Analysis_on_SP500Constitutes",
